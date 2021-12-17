@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Examen</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
   </head>
-  <body></body>
+  <body>
+    <header><h1>Guia telefonica</h1></header>
+    <main>
+      <section>
+        <h2>Añadir persona</h2>
+        <form action="index.html">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="nombre" />
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="apellido"
+          />
+          <label for="direccion">Direccion</label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            placeholder="direccion"
+          />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="email" />
+          <label for="telefono">Telefono</label>
+          <input
+            type="number"
+            id="telefono"
+            name="telefono"
+            placeholder="telefono"
+          />
+          <input type="number" id="postal" placeholder="codigo postal" />
+          <input type="number" id="numero" placeholder="numero" />
+          <button id="btn-anniadir">Añadir</button>
+        </form>
+      </section>
+      <section>
+        <p id="ejercicio1"></p>
+        <p id="ejercicio2"></p>
+      </section>
+      <section>
+        <form action="index.html">
+          <input type="text" id="provincia" placeholder="digite madrid" />
+          <button id="btn-provincia">Escriba una provincia</button>
+        </form>
+      </section>
+      <section>
+        <h2>Personas:</h2>
+        <p id="resu"></p>
+      </section>
+      <section>
+        <textarea name="coco" id="coco" cols="30" rows="10"></textarea>
+        <p id="c"></p>
+      </section>
+    </main>
+  </body>
   <script src="./js/jquery.js"></script>
   <script type="module" src="./js/app.js"></script>
 </html>
